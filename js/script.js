@@ -19,16 +19,33 @@
 
 // creazione funzione
 
+// var parola = prompt('Inserisci una parola');
+//
+// var risultato = isPalindrome(parola);
+// console.log(risultato);
+//
+// if(parola == risultato){
+//     console.log('La parola è palindroma');
+// } else {
+//      console.log('La parola non è palindroma');
+// }
+//
+//
+//
+// function isPalindrome(stringa){
+//     var contrario = '';
+//
+//     for (var i = parola.length; i >= 0 ; i--){
+//         contrario += parola.charAt(i);
+//     }
+//
+//     return contrario;
+// }
+
+//alternativa con l'if dentro la funzione
 var parola = prompt('Inserisci una parola');
 
 var risultato = isPalindrome(parola);
-console.log(risultato);
-
-if(parola == risultato){
-    console.log('La parola è palindroma');
-} else {
-     console.log('La parola non è palindroma');
-}
 
 
 
@@ -38,6 +55,9 @@ function isPalindrome(stringa){
     for (var i = parola.length; i >= 0 ; i--){
         contrario += parola.charAt(i);
     }
-
-    return contrario;
+    if(parola == contrario){
+        console.log('La parola è palindroma');
+    } else {
+         console.log('La parola non è palindroma');
+    }
 }
