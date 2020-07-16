@@ -44,8 +44,9 @@
 
 //alternativa con l'if dentro la funzione
 var parola = prompt('Inserisci una parola');
+parola = parola.toLowerCase();
 
-var risultato = isPalindrome(parola);
+isPalindrome(parola);
 
 
 
